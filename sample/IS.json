@@ -1,0 +1,56 @@
+{
+
+  "applications" : [
+    {
+      "name" : "Penelope GB",
+      "programs" : [
+        {
+          "name" : "UI Penelope GB",
+          "features" : [
+            "Gestion accesss_token",
+            "Lister fichier",
+            "Télécharger fichier"
+          ]
+          "technology" : [
+            "Angular","Nginx","AKS"
+          ],
+
+        },
+        {
+          "name" : "API Penelope GB",
+          "features" : [
+            "CRUD accesss_token",
+            "CRUD fichier"
+          ]
+          "technology" : [
+            "Sringboot","JAVA","AKS"
+          ],
+        }
+      ],
+      "datasources" : [
+        {
+          "name" : "Penelope GB BDD",
+          "technology" : "Postgresql"
+        }
+      ],
+      "flows" : [
+        {
+          "name": "Use API",
+          "initiator" : "UI Penelope GB",
+          "receiver": "API Penelope GB",
+          "format" :"rest/json",
+          "protocol" : "https",
+          "auth" : "oAuth2"
+        },
+        {
+          "name": "Use BDD",
+          "initiator" : "API Penelope GB",
+          "receiver": "Penelope GB BDD",
+          "format" :"",
+          "protocol" : "sql",
+          "auth" : ""
+        }
+      ]
+    }
+  ]
+}
