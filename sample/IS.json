@@ -1,5 +1,4 @@
 {
-
   "applications" : [
     {
       "name" : "Penelope GB",
@@ -10,11 +9,12 @@
             "Gestion accesss_token",
             "Lister fichier",
             "Télécharger fichier"
-          ]
-          "technology" : [
-            "Angular","Nginx","AKS"
           ],
-
+          "technology" : [
+            "Angular",
+            "Nginx",
+            "AKS"
+          ]
         },
         {
           "name" : "API Penelope GB",
@@ -23,8 +23,10 @@
             "CRUD fichier"
           ]
           "technology" : [
-            "Sringboot","JAVA","AKS"
-          ],
+            "Sringboot",
+            "JAVA",
+            "AKS"
+          ]
         }
       ],
       "datasources" : [
