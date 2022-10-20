@@ -6,33 +6,33 @@
         {
           "name" : "UI Penelope GB",
           "features" : [
-            "Gestion accesss_token",
-            "Lister fichier",
-            "Télécharger fichier"
-          ],
+            {"name":"Gestion accesss_token"},
+            {"name":"Lister fichier"},
+            {"name":"Télécharger fichier"}
+           ],
           "technology" : [
-            "Angular",
-            "Nginx",
-            "AKS"
-          ]
+            {"name":"Angular"},
+            {"name":"Nginx"},
+            {"name":"AKS"}]
         },
         {
           "name" : "API Penelope GB",
           "features" : [
-            "CRUD accesss_token",
-            "CRUD fichier"
-          ]
+            {"name":"CRUD accesss_token"},
+            {"name":"CRUD fichier"}
+          ],
           "technology" : [
-            "Sringboot",
-            "JAVA",
-            "AKS"
-          ]
+            {"name":"Sringboot"},
+            {"name":"JAVA"},
+            {"name":"AKS"}]
         }
       ],
       "datasources" : [
         {
           "name" : "Penelope GB BDD",
-          "technology" : "Postgresql"
+          "technology" : [
+            {"name":"Postgresql"}
+          ]
         }
       ],
       "flows" : [
